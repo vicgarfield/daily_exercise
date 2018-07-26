@@ -49,5 +49,11 @@ add_executable(
         linked_list algorithm_exercise/linked_list.cc
 )
 target_link_libraries(linked_list
+)
 
+add_executable(two_stack_to_queue
+        algorithm_exercise/two_stack_to_queue.cc
+        algorithm_exercise/two_stack_to_queue.h
+)
+target_link_libraries(two_stack_to_queue
 )
