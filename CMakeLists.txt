@@ -57,3 +57,6 @@ add_executable(two_stack_to_queue
 )
 target_link_libraries(two_stack_to_queue
 )
+
+add_executable(reverse_listnode
+        algorithm_exercise/reverse_listnode.cc)
