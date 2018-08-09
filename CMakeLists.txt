@@ -58,5 +58,5 @@ add_executable(two_stack_to_queue
 target_link_libraries(two_stack_to_queue
 )
 
-add_executable(reverse_listnode
-        algorithm_exercise/reverse_listnode.cc)
+add_executable(reverse_listnode algorithm_exercise/reverse_listnode.cc)
+add_executable(find_n_times algorithm_exercise/find_n_times.cc)
