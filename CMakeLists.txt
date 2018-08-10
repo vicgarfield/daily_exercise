@@ -60,3 +60,4 @@ target_link_libraries(two_stack_to_queue
 
 add_executable(reverse_listnode algorithm_exercise/reverse_listnode.cc)
 add_executable(find_n_times algorithm_exercise/find_n_times.cc)
+add_executable(binary_tree_depth algorithm_exercise/binary_tree_depth.cc)
