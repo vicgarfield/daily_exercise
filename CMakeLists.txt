@@ -7,6 +7,7 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 include_directories(
         ${PROJECT_SOURCE_DIR}
         ${PROJECT_SOURCE_DIR}/include
+        ${PROJECT_SOURCE_DIR}/algorithm_exercise
 )
 
 #add_library(SRC_LIB SHARED
@@ -58,6 +59,13 @@ add_executable(two_stack_to_queue
 target_link_libraries(two_stack_to_queue
 )
 
-add_executable(reverse_listnode algorithm_exercise/reverse_listnode.cc)
+add_executable(merge_two_linkedlist algorithm_exercise/merge_two_linkedlist.cc
+        algorithm_exercise/list_node.cc
+        algorithm_exercise/list_node.h
+        )
+add_executable(reverse_listnode algorithm_exercise/reverse_listnode.cc
+        algorithm_exercise/list_node.cc
+        algorithm_exercise/list_node.h
+        )
 add_executable(find_n_times algorithm_exercise/find_n_times.cc)
 add_executable(binary_tree_depth algorithm_exercise/binary_tree_depth.cc)
