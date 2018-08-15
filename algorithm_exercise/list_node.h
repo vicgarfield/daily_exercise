@@ -19,6 +19,7 @@ public:
     void show_listnode(ListNode* p_Head);
 
     void reverse_listnode(ListNode* p_Head);
+    ListNode* reverse_listnode2(ListNode* p_Head);
 
 };
 

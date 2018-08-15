@@ -38,3 +38,23 @@ void LinkedList::reverse_listnode(ListNode* p_Head) {
     }
     reverse_listnode(eleNode);
 }
+
+ListNode* LinkedList::reverse_listnode2(ListNode* p_Head) {
+
+    ListNode* p_Node = p_Head;
+    ListNode* p_Pre = nullptr;
+    ListNode* p_Next = nullptr;
+    ListNode* p_ReveredHead = nullptr;
+
+    while (p_Node != nullptr) {
+        p_Next = p_Node->m_pNext;
+
+        if (p_Next == nullptr)
+            p_ReveredHead = p_Node;
+
+        p_Node->m_pNext = p_Pre;
+        p_Pre = p_Node;
+        p_Node = p_Next;
+    }
+    return p_ReveredHead;
+}

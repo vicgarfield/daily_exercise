@@ -19,7 +19,8 @@ int main() {
 
     linkedList.show_listnode(p_Head);
 
-    linkedList.reverse_listnode(p_Head);
+//    linkedList.reverse_listnode(p_Head);
+    linkedList.reverse_listnode2(p_Head);
     linkedList.show_listnode(new_list);
 
     std::cout << "Down!" << std::endl;
