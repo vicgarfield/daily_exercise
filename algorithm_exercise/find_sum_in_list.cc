@@ -4,17 +4,17 @@
 
 #include <iostream>
 
-bool find_two_sum(int* arr, int sum, int* begin, int* end) {
-    while(arr[*begin] + arr[*end] != sum && *begin < *end) {
-        if (arr[*begin] + arr[*end] > sum) {
-            (*end)--;
+bool find_two_sum(int arr[], int sum, int& begin, int& end) {
+    while(arr[begin] + arr[end] != sum && begin < end) {
+        if (arr[begin] + arr[end] > sum) {
+            end--;
         }
         else {
-            (*begin)++;
+            begin++;
         }
     }
 
-    if (*begin != *end) {
+    if (begin != end) {
         return true;
     } else
         return false;
@@ -29,7 +29,7 @@ int main() {
     int end = 9;
     bool is_sum = false;
 
-    is_sum = find_two_sum(arr, sum, &begin, &end);
+    is_sum = find_two_sum(arr, sum, begin, end);
 
     std::cout << "is_sum:" << is_sum << std::endl;
     std::cout << "begin:" << begin << ", end:" << end << std::endl;
