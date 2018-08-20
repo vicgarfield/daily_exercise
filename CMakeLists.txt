@@ -67,6 +67,14 @@ add_executable(reverse_listnode algorithm_exercise/reverse_listnode.cc
         algorithm_exercise/list_node.cc
         algorithm_exercise/list_node.h
         )
+add_executable(least_father_root algorithm_exercise/least_father_root.cc
+        algorithm_exercise/binary_tree.cc
+        algorithm_exercise/binary_tree.h
+        )
+add_executable(least_father_root2 algorithm_exercise/least_father_root2.cc
+        algorithm_exercise/binary_tree.cc
+        algorithm_exercise/binary_tree.h
+        )
 add_executable(find_n_times algorithm_exercise/find_n_times.cc)
 add_executable(binary_tree_depth algorithm_exercise/binary_tree_depth.cc)
 add_executable(LCS algorithm_exercise/LCS.cc)
